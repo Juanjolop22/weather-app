@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(36, 35, 35), rgb(47, 102, 126));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(48deg, rgb(45, 44, 44), rgb(67, 133, 162));
+  border-radius: 50px;
+  height: 80%;
+  width: 60%;
+  box-shadow: 0px 0px 25px rgba(243, 241, 241, 0.2);
+}
+
+.search-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  margin-top: 20px;
+  height: 15%;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
+  width: 70%;
+  height: 70%;
+}
+.input-container #input {
+  width: 75%;
+  height: 90%;
+  border: 2px solid gray;
+  border-radius: 60px;
+  font-size: xx-large;
+  color: rgb(72, 71, 71);
+  padding-left: 5%;
+}
+.input-container #input:focus {
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  margin-left: 4%;
+  width: 30%;
+  height: 70%;
+  font-size: x-large;
+}
+.button-container #button {
+  width: 32%;
+  height: 90%;
+  border: 2px solid gray;
+  border-radius: 60px;
+  color: rgb(94, 92, 92);
+}
+.button-container #button .material-icons {
+  font-size: 32px;
+  color: rgb(38, 38, 38);
+}
+.button-container #button:hover {
+  cursor: pointer;
+  background-color: rgb(99, 98, 98);
+}
+.button-container #button:hover .material-icons {
+  color: white;
+}
+
+.weather-text-visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  justify-content: start;
+  flex-direction: column;
+  transform: translateX(0);
+  transition: opacity 1.5s ease-out, transform 2s ease-out;
+}
+.weather-text-visible h2 {
+  font-weight: lighter;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  text-underline-offset: 7px;
+}
+.weather-text-visible h3 {
+  font-weight: lighter;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+}
+
+.weather-text-hidden {
+  opacity: 0;
+  transform: translateX(-40%);
+}
+
+.weather-info {
+  height: 60%;
+  width: 100%;
+  justify-content: start;
+  flex-direction: column;
+  transform: translateX(0);
+  transition: opacity 1.5s ease-out, transform 2s ease-out;
+  height: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(40deg, rgb(149, 149, 149), rgb(67, 133, 162));
+  border-radius: 0 0 50px 50px;
+}
+.weather-info p {
+  font-weight: lighter;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+}
+.weather-info h2 {
+  font-weight: lighter;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  text-decoration: none;
+  text-underline-offset: none;
+  font-weight: 900;
+}
+.weather-info .fa-fire {
+  margin-top: 5%;
+  font-size: 70px;
+  color: #FF4500;
+}
+.weather-info .fa-snowflake {
+  margin-top: 5%;
+  font-size: 70px;
+  color: #8cd4ec;
+}
+.weather-info .fa-cloud {
+  margin-top: 1%;
+  font-size: 65px;
+  color: rgb(227, 225, 225);
+  margin-bottom: 4%;
+}/*# sourceMappingURL=style.css.map */
