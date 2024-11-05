@@ -50,6 +50,7 @@ $colorwhite: white;
 .input-container{
   @include flex-center();
   justify-content: end;
+  flex-direction: column;
   @include searchLocationItemsSize(70%, 70%);
 
   #input{
@@ -61,9 +62,11 @@ $colorwhite: white;
 
     &:focus{
       outline: none
-
     }
   }
+}
+.input-error{
+  background: black;
 }
 
 .button-container{

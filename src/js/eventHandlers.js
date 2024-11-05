@@ -13,14 +13,13 @@ export const handleClickButton = (input) =>{
     document.querySelector('#button').addEventListener('click',  () =>{
         const cityName = input.value;
         givenCityName(cityName);
+
     }); 
 }
 
 const givenCityName = (city) =>{
+    if(!city)return
     if (city) {
-        fetchWeather(city)
-        if(!city){
-            prompt('ingresa un nombre de ciudad o pais valido.')
-        }
+        fetchWeather(city);
     }
 };
