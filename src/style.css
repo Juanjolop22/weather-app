@@ -181,4 +181,58 @@
   font-size: 65px;
   color: rgb(227, 225, 225);
   margin-bottom: 4%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+  }
+  .search-location {
+    height: 20%;
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    box-shadow: 0 4px px white;
+    z-index: 1;
+  }
+  .search-location .button-container {
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    margin-top: 2%;
+  }
+  .search-location .button-container .button {
+    width: 100%;
+    height: 100%;
+  }
+  .search-location .input-container {
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+  }
+  .search-location .input-container #input {
+    border: 0 solid white;
+    text-align: center;
+    padding: 0;
+    width: 95%;
+  }
+  .weather-text-visible {
+    height: 80%;
+    margin-top: 5%;
+    font-size: medium;
+  }
+  .weather-info {
+    margin-top: 0px;
+    border-radius: 0px;
+    font-size: 75%;
+  }
+  .weather-info p {
+    font-size: 30px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
