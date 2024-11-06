@@ -36,7 +36,6 @@ console.log(data);
 
 }
 
-const input = document.querySelector('#input');
 handleKeyPress(input);
 handleClickButton(input);
 

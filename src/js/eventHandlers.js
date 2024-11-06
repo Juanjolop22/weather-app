@@ -3,23 +3,20 @@ import {fetchWeather} from './main.js';
 export const handleKeyPress = (input) =>{
     input.addEventListener('keypress', (event) =>{
         if (event.key === 'Enter') {
-            const cityName = input.value;
-            givenCityName(cityName);  
+            processCityInput(input);  
         }
     });
 }
 
 export const handleClickButton = (input) =>{
     document.querySelector('#button').addEventListener('click',  () =>{
-        const cityName = input.value;
-        givenCityName(cityName);
+        processCityInput(input);
 
     }); 
 }
 
-const givenCityName = (city) =>{
-    if(!city)return
-    if (city) {
-        fetchWeather(city);
-    }
+const processCityInput = (input) => {
+    const cityName = input.value;
+    if (!cityName) return;
+    fetchWeather(cityName);
 };
