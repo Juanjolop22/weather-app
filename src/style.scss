@@ -50,8 +50,14 @@ $colorwhite: white;
 .input-container{
   @include flex-center();
   justify-content: end;
-  flex-direction: column;
   @include searchLocationItemsSize(70%, 70%);
+  p{
+    color: rgb(169, 14, 14);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 900;
+  }
 
   #input{
     @include searchLocationItemsSize(75%, 90% );
@@ -59,14 +65,17 @@ $colorwhite: white;
     font-size: xx-large;
     color: rgb(72, 71, 71);
     padding-left: 5%;
-
+    
     &:focus{
       outline: none
     }
   }
 }
+.input-container2{
+  flex-direction: column;
+}
 .input-error{
-  background: black;
+  border: 3px solid rgb(169, 14, 14) !important;
 }
 
 .button-container{
