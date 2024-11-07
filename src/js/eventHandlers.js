@@ -1,5 +1,6 @@
 import {fetchWeather} from './main.js';
 
+
 export const handleKeyPress = (input) =>{
     input.addEventListener('keypress', (event) =>{
         if (event.key === 'Enter') {
