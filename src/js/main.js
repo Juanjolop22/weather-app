@@ -28,7 +28,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3113f
 
 .then(data =>{
 
- lastCity = cityName;    
+lastCity = cityName;    
 get_weather(data, cityName);
 console.log(data);
 

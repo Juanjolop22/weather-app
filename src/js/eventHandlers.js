@@ -12,7 +12,6 @@ export const handleKeyPress = (input) =>{
 export const handleClickButton = (input) =>{
     document.querySelector('#button').addEventListener('click',  () =>{
         processCityInput(input);
-
     }); 
 }
 

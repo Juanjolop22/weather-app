@@ -16,6 +16,7 @@ export const get_weather = (data, cityName) =>{
         createSound();
         welcomeTextClassChange.classList.add('weather-info');
         addWeatherInfo(data, welcomeTextClassChange, cityName);
+        input.value = '';
     }
 }
 
